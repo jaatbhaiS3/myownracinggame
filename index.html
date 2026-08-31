@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🏎️ Speed Racer - Racing Game</title>
+    <title>Speed Racer-JAATKARacing Game</title>
     <style>
         * {
             margin: 0;
@@ -12,8 +12,9 @@
         }
 
         body {
-            font-family: 'Arial Black', sans-serif;
-            background: #000;
+            font-family: 'GREEN'
+            ', sans-serif;
+            background: #000000;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -25,25 +26,25 @@
             position: relative;
             width: 400px;
             height: 600px;
-            background: linear-gradient(180deg, #87CEEB 0%, #E0F6FF 100%);
-            border: 3px solid #333;
+            background: linear-gradient(180deg, #22AA22 0%, #44CC44 100%);
+            border: 3px red #333333;
             overflow: hidden;
             box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
         }
 
         #gameCanvas {
             display: block;
-            background: linear-gradient(180deg, #87CEEB 0%, #E0F6FF 100%);
+            background: linear-gradient(180deg, #22AA22 0%, #44CC44 100%);
         }
 
         .ui {
             position: absolute;
             top: 10px;
             left: 10px;
-            color: white;
+            color: rgba(255, 255, 255, 0.786);
             font-size: 16px;
             font-weight: bold;
-            text-shadow: 2px 2px 4px #000;
+            text-shadow: 2px 2px 4px #cd1b1b;
             z-index: 10;
         }
 
@@ -368,8 +369,8 @@
 
         // Draw road
         function drawRoad() {
-            // Road
-            ctx.fillStyle = '#333';
+            // Road - grass green
+            ctx.fillStyle = '#1a6b1a';
             ctx.fillRect(0, 0, canvas.width, canvas.height);
 
             // Road lanes
